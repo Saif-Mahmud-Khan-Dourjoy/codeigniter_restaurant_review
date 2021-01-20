@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <!-- =====  BASIC PAGE NEEDS  ===== -->
+    <meta charset="utf-8">
+    <title>Cholkhai</title>
+    <!-- =====  SEO MATE  ===== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="2 Days">
+    <meta name="robots" content="ALL">
+    <meta name="rating" content="8 YEARS">
+    <meta name="Language" content="en-us">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+    <!-- =====  MOBILE SPECIFICATION  ===== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <!-- =====  CSS  ===== -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.html">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
+</head>
+
+<body>
+
+    <div class="loder"></div>
+    <div class="wrapper">
+
+        <!-- =====  HEADER START  ===== -->
+        <header id="header">
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="header-top-left">
+                                <div class="contact"><a href="index.html">CHOLKHA!</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <ul class="header-top-right text-right">
+                                <li class="account"><a href="review.html">Post a Review</a></li>
+                                <li class="account"><a href="login.html">My Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+          <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 col-lg-12 mt_100 mb_50">
+                    <!-- contact  -->
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="panel-login panel">
+                                <div class="panel-heading">
+                                    <h3>Add Restaurant</h3>
+                                    <hr>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                             <form id="add_res"  method="post">
+                                                <div>
+                                                  <div class="form-group">
+                                                    <input type="text" name="name" id="name" tabindex="2" class="form-control" placeholder="Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" name="country" id="country" tabindex="2" class="form-control" placeholder="Country">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="text" name="state" id="state" tabindex="2" class="form-control" placeholder="State">
+                                                </div>
+                                                  <div class="form-group">
+                                                    <input type="text" name="place" id="place" tabindex="2" class="form-control" placeholder="Place">
+                                                </div>
+                                                 
+                                                  <div class="form-group">
+                                                    <input type="text" name="food_type" id="food_type" tabindex="2" class="form-control" placeholder="Type of Food">
+                                                </div>
+                           
+                      
+                            <div class="my-2">
+                                <div >
+                                     <h4>Add Offer:</h4>
+                                </div>
+                              
+                                <div>
+                                   <img id="offer_image" height='50px' width='50px' >
+                                    <input type="file" accept="image/*" onchange="preview_image1(event)">
+                                    <!-- <input type="button" value="Change" class="btn btn-warning" onclick="change_profile_picture()"> -->
+
+                                    <script type="text/javascript">
+                                      function preview_image1(event) {
+                                        var reader = new FileReader();
+
+
+                                        reader.onload = function(){
+                                          var output = document.getElementById('offer_image');
+
+                                          output.src = reader.result;
+                                        }
+                                        reader.readAsDataURL(event.target.files[0]);
+                                      }
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 10px; margin-bottom: 20px">
+                                <div >
+                                     <h4>Add Image:</h4>
+                                </div>
+                              
+                                <div>
+                                   <img id="image" height='50px' width='50px' >
+                                    <input type="file" accept="image/*" onchange="preview_image(event)">
+                                    <!-- <input type="button" value="Change" class="btn btn-warning" onclick="change_profile_picture()"> -->
+
+                                    <script type="text/javascript">
+                                      function preview_image(event) {
+                                        var reader = new FileReader();
+
+
+                                        reader.onload = function(){
+                                          var output = document.getElementById('image');
+
+                                          output.src = reader.result;
+                                        }
+                                        reader.readAsDataURL(event.target.files[0]);
+                                      }
+                                    </script>
+                                </div>
+                            </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 col-sm-offset-3">
+                                                            <input type="submit" name="add_res" id="add_res" tabindex="4" class="form-control btn btn-info" value="ADD">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer pt_60">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top">
+                    <div class="col-md-12 text-center">
+                        <a href="" class="btn btn-lg bg-white footer-btn">Post a Review</a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 text-center">
+                        <div class="footer-desc">Can't find a restaurant in cholkhai? Add a new restaurant by clicking here</div>
+                        <div class=" footer-logo ">
+                            <a href="index.html "> Cholkha!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt_60 ptb_20 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div class="copyright-part">@ 2020 All Rights Reserved, CHOLKHAI</div>
+                    </div>
+                    <div class="col-md-4 "></div>
+                    <div class="col-md-4 text ">
+                        <div class="copyright-part text-right ">Developed by <a href="https://www.devszone.com " target="_blank ">DevsZone</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+   
+
+    <a id="scrollup"></a>
+    <script src="js/jQuery_v3.1.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/custom.js"></script>
+     <script type="text/javascript">
+     $(document).ready(function(){
+         $('#add_res').submit(function(event){
+                   event.preventDefault();
+                    var name = $('#name').val();
+                    var country = $('#country').val();
+                    var state = $('#state').val();
+                    var place = $('#place').val();
+                    var food_type = $('#food_type').val();
+
+            var userid = localStorage.getItem("user_id");
+            var x = document.getElementById("offer_image").src;
+            var y = document.getElementById("image").src;
+
+            var offer_image = x.replace('data:image/jpeg;base64,', '');
+            var image = y.replace('data:image/jpeg;base64,', '');
+           
+            $.ajax({
+                    url: "http://localhost/Review/restaurant/add_restaurant/",
+                    type: "post",
+                    // dataType: 'json',
+                    data: {
+                        'userid': userid,
+                        'name': name,
+                        'country': country,
+                        'state': state,
+                        'place': place,
+                        'food_type': food_type,
+                        'offer_image': offer_image,
+                        'image': image,
+                    },
+                    success: function(data) {
+                        alert("successfull");
+                        var restaurant_id = data; 
+                        // alert(restaurant_id);
+                        localStorage.setItem('restaurant_id',restaurant_id);
+                       setTimeout(function(){
+                           window.location.reload(1);
+                        }, 1000);
+                   
+                    },
+
+                    error:function(data){
+                        console.log("error");
+                    }
+
+                });
+                 
+         });
+
+        });                                                     
+
+    </script>
+
+</body>
+
+</html>
